@@ -1,46 +1,19 @@
 # Lab M4.09 - Recreate Project 1 with Terraform
 
-**Course:** Cloud Engineering Bootcamp - Week 4
-**Estimated Time:** 120-180 minutes (Major Lab)
+## Architecture
+- VPC with 6 subnets across 2 AZs
+- ALB in public subnets
+- 3 app servers in private subnets
+- Security groups per tier
 
-## 🎯 Objectives
+## Access
+Application URL: http://project1-tf-alb-563351877.us-east-1.elb.amazonaws.com)
 
-- Recreate complete Project 1 using Terraform
-- Build 3-tier architecture as code
-- Deploy Application Load Balancer
-- Compare manual vs IaC approach
+## Deployment
+\`\`\`bash
+terraform init && terraform apply
+\`\`\`
 
-## 📁 Repository Structure
-
-```
-ce-lab-project1-terraform/
-├── README.md
-├── ARCHITECTURE.md
-├── COMPARISON.md
-├── main.tf
-├── modules/
-│   ├── vpc/
-│   ├── alb/
-│   ├── compute/
-│   └── security-groups/
-├── variables.tf
-├── outputs.tf
-├── architecture-diagram.png
-└── screenshots/
-```
-
-## ✅ Grading (100pts)
-
-- Network infrastructure: 20pts
-- Security groups: 15pts
-- ALB configuration: 20pts
-- Compute tier: 20pts
-- Database tier: 10pts
-- Comparison analysis: 10pts
-- Documentation: 5pts
-
-## 🌟 Bonus (20pts)
-
-- Auto Scaling Group: 10pts
-- RDS deployment: 5pts
-- CloudWatch dashboards: 5pts
+## Comparison: Manual vs Terraform
+- **Manual (Project 1):** ~2-3 hours
+- **Terraform:** ~5 minutes
