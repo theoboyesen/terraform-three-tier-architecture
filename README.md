@@ -168,7 +168,7 @@ Compared to the manual console deployment, Terraform significantly improves **sp
 
 This project is a Terraform-based recreation of the original manual deployment:
 
-- **Manual AWS Console Deployment:** *(link to your first repo)*  
-- **Terraform Infrastructure as Code Version:** *(this repository)*
+- **Manual AWS Console Deployment:** github.com/theoboyesen/three-tier-cloud-arhcitecture-deployment
+- **Terraform Infrastructure as Code Version:** github.com/theoboyesen/terraform-three-tier-architecture
 
 Both projects demonstrate the same architecture implemented using two different approaches.
